@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>充值卡类型列表</title>
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="keywords" content="Online Charge System,亿网星漫">
+<meta http-equiv="description" content="Online Charge System">
+<link rel="stylesheet" type="text/css"
+	href="../easyUI/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="../easyUI/themes/icon.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript" src="../easyUI/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../js/safe.js"></script>
+<script type="text/javascript" src="../easyUI/jquery.easyui.min.js"></script>
+<script type="text/javascript"
+	src="../easyUI/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript">
+		$(function(){
+			$('#tt').datagrid({
+				title:'充值卡类型列表',
+				iconCls:'icon-search',
+				singleSelect:true,
+				idField:'typeId',
+				pagination:true,
+				fitColumns:true,
+				url:'../ajax/cardType_query',
+				columns:[[
+					{field:'typeId',title:'ID',width:10},
+					{field:'typeName',title:'类型名称',width:40},
+					{field:'goodsType',title:'商品类型',width:40},
+					{field:'faceValue',title:'面值',width:40},
+					{field:'price',title:'价格',width:40},
+					{field:'note',title:'备注',width:100},
+					{field:'valid',title:'是否有效',align:'center',
+					    formatter:function(value,row,index){
+					        //debugger;
+					        value = value + '';
+							if (value == 'true'){
+								return '有效';
+							} else if(value == 'false') {
+								return '无效';
+							}else{
+							    return value;
+							}
+						}
+					}
+				]]
+			});
+		});
+		function query(){
+			var arr = $('#thisform').serializeArray();
+			var param = {};
+			$.each(arr, function(index) {
+			    if(this['value'] != ''){
+					if (param[this['name']]) {
+						param[this['name']] = param[this['name']] + "," + this['value'];
+					} else {
+						param[this['name']] = this['value'];
+					}
+				}
+			});
+			$('#tt').datagrid('load',param);
+		}
+	</script>
+</head>
+<body>
+	<form id="thisform">
+		<fieldset style="width: 400px;">
+			<legend>查询条件</legend>
+			<div class="field">
+				<label for="typeName">类型名称</label> <input name="typeName"
+					id="typeName" tabindex="1" />
+			</div>
+			<div class="field">
+				<label for="goodsType">商品类型</label> <input name="goodsType"
+					id="goodsType" class="easyui-combobox"
+					data-options="valueField:'typeId',textField:'typeName',url:'../ajax/goodsType_gets'"
+					tabindex="2" />
+			</div>
+			<div class="field">
+				<label for="valid">是否有效</label> <select id="valid" name="valid"
+					tabindex="3">
+					<option value="">全部</option>
+					<option value="true" selected="selected">有效</option>
+					<option value="false">无效</option>
+				</select>
+			</div>
+			<div class="button">
+				<button type="button" onclick="query();">查询</button>
+			</div>
+		</fieldset>
+	</form>
+	<table id="tt"></table>
+</body>
+</html>
