@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>商品列表</title>
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="keywords" content="Online Charge System,亿网星漫">
+<meta http-equiv="description" content="Online Charge System">
+<link rel="stylesheet" type="text/css"
+	href="../easyUI/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="../easyUI/themes/icon.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript" src="../easyUI/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../js/safe.js"></script>
+<script type="text/javascript" src="../easyUI/jquery.easyui.min.js"></script>
+<script type="text/javascript"
+	src="../easyUI/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript">
+		$(function(){
+			$('#tt').datagrid({
+				title:'商品列表[打勾表示商品已关联]',
+				iconCls:'icon-search',
+				singleSelect:false,
+				idField:'goodsId',
+				pagination:false,
+				fitColumns:true,
+				toolbar:'#toolbar',
+				url:'../ajax/goods_gets',
+				columns:[[
+				    {field:'checked',checkbox:true},
+					{field:'goodsId',title:'ID',width:10},
+					{field:'goodsType',title:'商品类型',width:40},
+					{field:'goodsProp',title:'商品属性',width:40},
+					{field:'goodsPrice',title:'商品金额',width:40},
+					{field:'note',title:'备注',width:100},
+				]],
+				onLoadSuccess:function(data)
+				{  
+				   $.ajax({
+					    type    :'POST',
+					    url     :'../ajax/userTypeRights_get',
+					    data    :{userType:2},
+					    success :function(result){
+					        var checkIds = result.goodsIds.split(',');
+					        for(var i in checkIds){ 
+							       $('#tt').datagrid('selectRecord',checkIds[i]);//根据id选中行 
+							}
+					    },
+					    dataType:'json'
+						});
+				} 
+			});
+		});
+		function query(){
+			var arr = $('#thisform').serializeArray();
+			var param = {};
+			$.each(arr, function(index) {
+			    if(this['value'] != ''){
+					if (param[this['name']]) {
+						param[this['name']] = param[this['name']] + "," + this['value'];
+					} else {
+						param[this['name']] = this['value'];
+					}
+				}
+			});
+			$('#tt').datagrid('load',param);
+		}
+		function save(){
+		    var rows = $('#tt').datagrid('getChecked');
+		    var agoodsId = new Array();
+	    	for(var i = 0; i < rows.length; i++){
+	    	    agoodsId.push(rows[i].goodsId);
+	    	}
+		    $.ajax({
+			    type    :'POST',
+			    url     :'../ajax/userTypeRights_goodsIds_set',
+			    data    :{'userType':2, 'goodsIds':agoodsId.toString()},
+			    success :function(data){
+				    $.messager.show({
+									title:'提示',
+									msg:data,
+									timeout:2000,
+									showType:'slide'
+								});
+			    },
+			    dataType:'html'
+				});
+		}
+	</script>
+</head>
+<body>
+	<form id="thisform">
+		<fieldset style="width: 400px;">
+			<legend>查询条件</legend>
+			<div class="field">
+				<label for="goodsType">商品类型</label> <input name="goodsType"
+					id="goodsType" class="easyui-combobox"
+					data-options="valueField:'typeId',textField:'typeName',url:'../ajax/goodsType_gets'"
+					tabindex="1" />
+			</div>
+			<div class="field">
+				<label for="goodsProp">商品属性</label> <input name="goodsProp"
+					id="goodsProp" class="easyui-combobox"
+					data-options="valueField:'typeId',textField:'typeName',url:'../ajax/goodsProp_gets'"
+					tabindex="2" />
+			</div>
+			<div class="field">
+				<label for="valid">是否有效</label> <select id="valid" name="valid"
+					tabindex="3">
+					<option value="" selected="selected">全部</option>
+					<option value="true">有效</option>
+					<option value="false">无效</option>
+				</select>
+			</div>
+			<div class="button">
+				<button type="button" onclick="query();">查询</button>
+			</div>
+		</fieldset>
+	</form>
+	<table id="tt"></table>
+	<div id="toolbar">
+		<a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true"
+			onclick="save()">提交重置</a>
+	</div>
+</body>
+</html>

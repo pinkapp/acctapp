@@ -1,0 +1,46 @@
+!SESSION 2012-12-13 13:48:21.859 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.5.0_09
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -data D:\acctapp -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2012-12-13 13:48:55.431
+!MESSAGE Warnings while parsing the view contributions from the 'org.eclipse.ui.viewActions' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2012-12-13 13:48:55.431
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2012-12-13 13:48:55.431
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction2'
+!SUBENTRY 1 org.eclipse.ui 2 0 2012-12-13 13:48:55.431
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction3'
+!SUBENTRY 1 org.eclipse.ui 2 0 2012-12-13 13:48:55.431
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction4'
+!SUBENTRY 1 org.eclipse.ui 2 0 2012-12-13 13:48:55.431
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2012-12-13 13:48:55.431
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction2'
+!SUBENTRY 1 org.eclipse.ui 2 0 2012-12-13 13:48:55.431
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction3'
+!SUBENTRY 1 org.eclipse.ui 2 0 2012-12-13 13:48:55.431
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction4'
+
+!ENTRY org.eclipse.osgi 2 1 2012-12-13 13:49:33.031
+!MESSAGE NLS missing message: EventLogCategory in: org.jboss.ide.eclipse.as.ui.Messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-12-13 13:49:33.031
+!MESSAGE NLS missing message: HidePropertiesAction in: org.jboss.ide.eclipse.as.ui.Messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-12-13 13:49:33.031
+!MESSAGE NLS missing message: HideTextAction in: org.jboss.ide.eclipse.as.ui.Messages
+
+!ENTRY org.eclipse.osgi 2 1 2012-12-13 13:49:33.031
+!MESSAGE NLS missing message: HideLowerFrameAction in: org.jboss.ide.eclipse.as.ui.Messages
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 13:52:52.226
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 13:53:26.674
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 13:54:38.444
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
