@@ -92,3 +92,681 @@ Command-line arguments:  -data D:\acctapp -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.jst.server.tomcat.core 4 0 2012-12-13 16:07:47.123
 !MESSAGE Several ports (80, 8009) required by Tomcat v5.5 Server @ localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+!SESSION 2012-12-13 18:25:29.781 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.6.0_35
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -data D:\Documents\acctapp -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-12-13 18:25:31.875
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2012-12-13 18:25:45.640
+!MESSAGE A workspace crash was detected. The previous session did not exit normally. Not using saved taglib indexes.
+
+!ENTRY org.eclipse.osgi 2 0 2012-12-13 18:25:51.562
+!MESSAGE While loading class "org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$RcMoveHandler", thread "Thread[Worker-3,5,main]" timed out waiting (5016ms) for thread "Thread[main,6,main]" to finish starting bundle "org.eclipse.cdt.managedbuilder.core_8.1.0.201209170703 [841]". To avoid deadlock, thread "Thread[Worker-3,5,main]" is proceeding but "org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$RcMoveHandler" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/org.eclipse.cdt.managedbuilder.core_8.1.0.201209170703.jar" by thread "main".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.createResourceMoveHandler(ResourceChangeHandler2.java:91)
+	at org.eclipse.cdt.core.settings.model.util.ResourceChangeHandlerBase.resourceChanged(ResourceChangeHandlerBase.java:149)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:176)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 25 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.createResourceMoveHandler(ResourceChangeHandler2.java:91)
+	at org.eclipse.cdt.core.settings.model.util.ResourceChangeHandlerBase.resourceChanged(ResourceChangeHandlerBase.java:149)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:176)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.osgi 2 0 2012-12-13 18:25:56.562
+!MESSAGE While loading class "org.eclipse.cdt.managedbuilder.core.IManagedBuildInfo", thread "Thread[Worker-3,5,main]" timed out waiting (5000ms) for thread "Thread[main,6,main]" to finish starting bundle "org.eclipse.cdt.managedbuilder.core_8.1.0.201209170703 [841]". To avoid deadlock, thread "Thread[Worker-3,5,main]" is proceeding but "org.eclipse.cdt.managedbuilder.core.IManagedBuildInfo" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/org.eclipse.cdt.managedbuilder.core_8.1.0.201209170703.jar" by thread "main".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.createResourceMoveHandler(ResourceChangeHandler2.java:91)
+	at org.eclipse.cdt.core.settings.model.util.ResourceChangeHandlerBase.resourceChanged(ResourceChangeHandlerBase.java:149)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:176)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 25 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.createResourceMoveHandler(ResourceChangeHandler2.java:91)
+	at org.eclipse.cdt.core.settings.model.util.ResourceChangeHandlerBase.resourceChanged(ResourceChangeHandlerBase.java:149)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:176)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.osgi 2 0 2012-12-13 18:26:01.578
+!MESSAGE While loading class "org.eclipse.cdt.core.settings.model.util.ResourceChangeHandlerBase$DeltaVisitor", thread "Thread[Worker-3,5,main]" timed out waiting (5016ms) for thread "Thread[main,6,main]" to finish starting bundle "org.eclipse.cdt.core_5.4.1.201209170703 [824]". To avoid deadlock, thread "Thread[Worker-3,5,main]" is proceeding but "org.eclipse.cdt.core.settings.model.util.ResourceChangeHandlerBase$DeltaVisitor" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/org.eclipse.cdt.core_5.4.1.201209170703.jar" by thread "main".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.cdt.core.settings.model.util.ResourceChangeHandlerBase.doHandleResourceMove(ResourceChangeHandlerBase.java:190)
+	at org.eclipse.cdt.core.settings.model.util.ResourceChangeHandlerBase.resourceChanged(ResourceChangeHandlerBase.java:150)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:176)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 25 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.cdt.core.settings.model.util.ResourceChangeHandlerBase.doHandleResourceMove(ResourceChangeHandlerBase.java:190)
+	at org.eclipse.cdt.core.settings.model.util.ResourceChangeHandlerBase.resourceChanged(ResourceChangeHandlerBase.java:150)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:176)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.osgi 2 0 2012-12-13 18:26:06.578
+!MESSAGE While loading class "org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$Visitor", thread "Thread[Worker-3,5,main]" timed out waiting (5000ms) for thread "Thread[main,6,main]" to finish starting bundle "org.eclipse.cdt.managedbuilder.core_8.1.0.201209170703 [841]". To avoid deadlock, thread "Thread[Worker-3,5,main]" is proceeding but "org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$Visitor" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/org.eclipse.cdt.managedbuilder.core_8.1.0.201209170703.jar" by thread "main".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:182)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 23 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:182)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.launching 4 150 2012-12-13 18:31:30.531
+!MESSAGE The archive: D:/apache-tomcat-5.5.36/bin/bootstrap.jar which is referenced by the classpath, does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2012-12-13 20:52:10.718
+!MESSAGE No valid Android XML Editor Delegate found for file /app/WebRoot/WEB-INF/applicationContext.xml [Res null, type null]
+
+!ENTRY org.eclipse.jface 2 0 2012-12-13 20:52:12.843
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-12-13 20:52:12.843
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@12d49e0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@13c750c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-12-13 20:52:12.843
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4d36a8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1a477bf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-12-13 20:52:12.843
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@13f6e85,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@60ec56,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-12-13 20:52:12.843
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@17117d8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Character,
+		Go to Matching Character,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@11b309,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-12-13 20:52:12.843
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1d4a538,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@15cc764,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-12-13 20:52:12.843
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1ab1f3e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1904a5c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-12-13 20:52:12.843
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1e1e5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@e5e48a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-12-13 20:52:12.843
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1958a9f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@61d064,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-12-13 20:52:12.843
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@bfea42,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@176150c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-12-13 20:52:12.843
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1ac978a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1a0aec1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-12-13 20:52:12.843
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@111e4d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1f6929c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-12-13 20:52:12.843
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1dc67d5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@10868a1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-12-13 20:52:12.843
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@124dd30,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@9c62f5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-12-13 20:52:19.484
+!MESSAGE Failed to load properties file for project 'app'
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-12-13 21:01:17.250
+!MESSAGE No projects found for [D:\Documents\acctapp\app\WebRoot\WEB-INF\applicationContext.xml]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-12-13 21:09:49.093
+!MESSAGE No projects found for [D:\Documents\acctapp\app\WebRoot\WEB-INF\applicationContext.xml]
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Publishing failed with multiple errors
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\annotations-api.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\antlr-2.7.6.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\aopalliance-1.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-beanutils-1.8.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-chain-1.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-collections-3.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-dbcp-1.4.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-digester-2.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-fileupload-1.2.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-io-2.0.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-lang-2.4.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-lang3-3.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-logging-1.1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-logging-api-1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-pool-1.6.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-validator-1.3.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\dom4j-1.6.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\el-api.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\freemarker-2.3.19.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\hibernate-jpa-2.0-api-1.0.1.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\hibernate3.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\jasper.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\javassist-3.12.0.GA.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\jboss-logging-3.1.0.GA.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\jboss-transaction-api_1.1_spec-1.0.0.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\json_simple-1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\jsp-api.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\jta-1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\log4j-1.2.15.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\mysql-connector-java-5.1.18-bin.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\ognl-3.0.5.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\org.json-20120521.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\poi-3.8-20120326.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\slf4j-api-1.5.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\slf4j-api-1.6.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\slf4j-log4j12-1.5.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\spring.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\struts-core-1.3.10.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\struts2-core-2.3.3.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\struts2-json-plugin-2.3.3.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\struts2-spring-plugin-2.3.3.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.406
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\xwork-core-2.3.3.jar. May be locked by another process.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Publishing failed with multiple errors
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\annotations-api.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\antlr-2.7.6.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\aopalliance-1.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-beanutils-1.8.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-chain-1.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-collections-3.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-dbcp-1.4.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-digester-2.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-fileupload-1.2.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-io-2.0.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-lang-2.4.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-lang3-3.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-logging-1.1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-logging-api-1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-pool-1.6.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\commons-validator-1.3.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\dom4j-1.6.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\el-api.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\freemarker-2.3.19.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\hibernate-jpa-2.0-api-1.0.1.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\hibernate3.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\jasper.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\javassist-3.12.0.GA.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\jboss-logging-3.1.0.GA.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\jboss-transaction-api_1.1_spec-1.0.0.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\json_simple-1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\jsp-api.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\jta-1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\log4j-1.2.15.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\mysql-connector-java-5.1.18-bin.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\ognl-3.0.5.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\org.json-20120521.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\poi-3.8-20120326.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\slf4j-api-1.5.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\slf4j-api-1.6.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\slf4j-log4j12-1.5.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\spring.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\struts-core-1.3.10.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\struts2-core-2.3.3.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\struts2-json-plugin-2.3.3.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\struts2-spring-plugin-2.3.3.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:11:21.937
+!MESSAGE Could not delete D:\Documents\acctapp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\app\WEB-INF\lib\xwork-core-2.3.3.jar. May be locked by another process.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2012-12-13 21:19:05.031
+!MESSAGE Publishing failed with multiple errors
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:19:05.031
+!MESSAGE Could not delete D:/Documents/acctapp/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/app/WEB-INF/lib/el-api.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-12-13 21:19:05.031
+!MESSAGE Could not delete D:/Documents/acctapp/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/app/WEB-INF/lib/jsp-api.jar. May be locked by another process.
