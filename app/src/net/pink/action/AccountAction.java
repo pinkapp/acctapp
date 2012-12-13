@@ -6,22 +6,21 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import javax.annotation.Resource;
-
 import net.pink.service.AccountService;
+import net.pink.utils.BaseAction;
 
 import org.apache.struts2.json.JSONException;
 import org.apache.struts2.json.JSONUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
-import cc.ywxm.utils.BaseAction;
 
 /**
- * 
+ *
  * @author HuangDeCai
  * @since 2012-12-10 22:13:57
- * 
+ *
  */
 @SuppressWarnings("serial")
 @Controller
@@ -39,11 +38,11 @@ public class AccountAction extends BaseAction {
 	private Short category;
 	private Double money;
 	private String note;
-	@Resource
+	@Autowired
 	private AccountService accountService;
 
 	/**
-	 * 
+	 *
 	 * @return
 	 * @throws IOException
 	 * @throws JSONException

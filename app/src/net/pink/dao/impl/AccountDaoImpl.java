@@ -1,10 +1,9 @@
 package net.pink.dao.impl;
 
-import javax.annotation.Resource;
-
 import net.pink.dao.AccountDao;
 import net.pink.model.Account;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.stereotype.Repository;
@@ -12,9 +11,9 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class AccountDaoImpl implements AccountDao
 {
-	@Resource
+	@Autowired
 	private HibernateTemplate hibernateTemplate;
-	@Resource
+	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
 	public void update(Account card)

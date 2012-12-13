@@ -5,12 +5,13 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 
+import net.pink.utils.BaseAction;
+
 import org.apache.struts2.json.JSONException;
 import org.apache.struts2.json.JSONUtil;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
-import cc.ywxm.utils.BaseAction;
 
 /**
  * 

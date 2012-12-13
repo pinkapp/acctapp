@@ -2,19 +2,18 @@ package net.pink.service.impl;
 
 import java.util.Date;
 
-import javax.annotation.Resource;
-
 import net.pink.dao.AccountDao;
 import net.pink.model.Account;
 import net.pink.service.AccountService;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
 @Service
 public class AccountServiceImpl implements AccountService {
-	@Resource
+	@Autowired
 	private AccountDao accountDao;
 
 	public int add(Date date, String item, Short category, Double money,

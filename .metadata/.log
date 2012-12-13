@@ -44,3 +44,51 @@ Command-line arguments:  -data D:\acctapp -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.ui 4 4 2012-12-13 13:54:38.444
 !MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 14:50:29.008
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 15:25:01.897
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 15:25:40.430
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 15:29:46.825
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 15:30:36.672
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 15:30:42.962
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 15:31:22.275
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 15:31:38.022
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 15:35:34.983
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 15:35:42.319
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 15:44:25.934
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 16:01:08.583
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 16:02:17.396
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 16:06:22.716
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2012-12-13 16:07:06.886
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2012-12-13 16:07:47.123
+!MESSAGE Several ports (80, 8009) required by Tomcat v5.5 Server @ localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
