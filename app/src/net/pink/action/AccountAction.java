@@ -56,9 +56,10 @@ public class AccountAction extends BaseAction {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
+		System.out.println(item);
 		int code = accountService.add(d, item, category, money, note);
 		jsonString = JSONUtil.serialize(code);
-		response.setContentType("text/xml;charset=utf-8");
+		response.setContentType("text/html;charset=utf-8");
 		response.setHeader("Cache-Control", "no-cache");
 		PrintWriter out = response.getWriter();
 		out.append(jsonString);
