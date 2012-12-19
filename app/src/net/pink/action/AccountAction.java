@@ -51,6 +51,7 @@ public class AccountAction extends BaseAction {
 		response.setContentType("text/html;charset=utf-8");
 		response.setHeader("Cache-Control", "no-cache");
 		PrintWriter out = response.getWriter();
+		logger.debug(result);
 		out.append(result);
 		out.close();
 		return NONE;
@@ -64,6 +65,7 @@ public class AccountAction extends BaseAction {
 		response.setHeader("Cache-Control", "no-cache");
 		PrintWriter out = response.getWriter();
 		out.append(result);
+		logger.debug(result);
 		out.close();
 		return NONE;
 	}

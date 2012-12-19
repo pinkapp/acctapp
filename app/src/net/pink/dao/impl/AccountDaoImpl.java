@@ -41,7 +41,7 @@ public class AccountDaoImpl implements AccountDao {
 
 	public List<Account> list() {
 		String sql = "SELECT `id`, `date_` as date, `item`, `category`, `money`, `note` FROM `accounts`";
-		sql = "select * from (" + sql + ")";
+		sql = "select * from (" + sql + ")a";
 		return RSMapper.queryList(jdbcTemplate, sql, Account.class);
 	}
 
