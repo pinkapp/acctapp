@@ -1,13 +1,10 @@
 package net.pink.model;
 
-import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 /**
  * 账目
@@ -59,7 +56,6 @@ public class Account implements java.io.Serializable {
 		this.id = id;
 	}
 
-	@Temporal(TemporalType.DATE)
 	@Column(name = "date_", nullable = false, length = 10)
 	public String getString() {
 		return this.date;
