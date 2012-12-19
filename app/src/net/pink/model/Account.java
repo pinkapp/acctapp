@@ -20,8 +20,12 @@ public class Account implements java.io.Serializable {
 
 	// Fields
 
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer id;
-	private Date date;
+	private String date;
 	private String item;
 	private Short category;
 	private Double money;
@@ -34,7 +38,7 @@ public class Account implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Account(Date date, String item, Short category, Double money,
+	public Account(String date, String item, Short category, Double money,
 			String note) {
 		this.date = date;
 		this.item = item;
@@ -57,11 +61,11 @@ public class Account implements java.io.Serializable {
 
 	@Temporal(TemporalType.DATE)
 	@Column(name = "date_", nullable = false, length = 10)
-	public Date getDate() {
+	public String getString() {
 		return this.date;
 	}
 
-	public void setDate(Date date) {
+	public void setString(String date) {
 		this.date = date;
 	}
 

@@ -1,6 +1,7 @@
 package net.pink.service.impl;
 
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 import net.pink.dao.AccountDao;
 import net.pink.model.Account;
@@ -16,7 +17,7 @@ public class AccountServiceImpl implements AccountService {
 	@Autowired
 	private AccountDao accountDao;
 
-	public int add(Date date, String item, Short category, Double money,
+	public int add(String date, String item, Short category, Double money,
 			String note) {
 		if (date == null) {
 			return 2;
@@ -38,6 +39,16 @@ public class AccountServiceImpl implements AccountService {
 			e.printStackTrace();
 		}
 		return 0;
+	}
+
+	public List<Account> gets() {
+		List<Account> result = new ArrayList<Account>();
+		try {
+			result= accountDao.list();
+		} catch (RuntimeException e) {
+			e.printStackTrace();
+		}
+		return result;
 	}
 
 }

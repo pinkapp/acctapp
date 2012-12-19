@@ -4,8 +4,7 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-	<package name="struts-root" extends="struts-default" namespace="/">
-		<action name="account_add" class="accountAction" method="add" />
-		<action name="app_gets" class="appAction" method="gets" />
+	<package name="struts-add" extends="struts-default" namespace="/add">
+		<action name="account" class="accountAction" method="add" />
 	</package>
 </struts>

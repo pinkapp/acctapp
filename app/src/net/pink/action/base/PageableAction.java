@@ -1,11 +1,10 @@
-package net.pink.utils;
+package net.pink.action.base;
 
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
 import org.apache.struts2.interceptor.ServletRequestAware;
 import org.apache.struts2.interceptor.ServletResponseAware;
 import org.apache.struts2.interceptor.SessionAware;
@@ -15,6 +14,10 @@ import com.opensymphony.xwork2.ActionSupport;
 public class PageableAction extends ActionSupport implements
 		ServletRequestAware, ServletResponseAware, SessionAware, Pageable
 {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
 	protected String message;
 	protected HttpServletRequest request;
 	protected HttpServletResponse response;
@@ -54,12 +57,12 @@ public class PageableAction extends ActionSupport implements
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#getStart()
 	 */
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#getStart()
 	 */
 	public int getStart()
@@ -69,12 +72,12 @@ public class PageableAction extends ActionSupport implements
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#getEnd()
 	 */
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#getEnd()
 	 */
 	public int getEnd()
@@ -84,12 +87,12 @@ public class PageableAction extends ActionSupport implements
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#getPageNo()
 	 */
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#getPageNo()
 	 */
 	public int getPageNo()
@@ -99,12 +102,12 @@ public class PageableAction extends ActionSupport implements
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#setPageNo(int)
 	 */
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#setPageNo(int)
 	 */
 	public void setPageNo(int pageNo)
@@ -114,12 +117,12 @@ public class PageableAction extends ActionSupport implements
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#getPageSize()
 	 */
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#getPageSize()
 	 */
 	public int getPageSize()
@@ -129,12 +132,12 @@ public class PageableAction extends ActionSupport implements
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#setPageSize(int)
 	 */
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#setPageSize(int)
 	 */
 	public void setPageSize(int pageSize)
@@ -144,12 +147,12 @@ public class PageableAction extends ActionSupport implements
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#getTotalCount()
 	 */
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#getTotalCount()
 	 */
 	public int getTotalCount()
@@ -159,12 +162,12 @@ public class PageableAction extends ActionSupport implements
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#setTotalCount(int)
 	 */
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#setTotalCount(int)
 	 */
 	public void setTotalCount(int totalCount)
@@ -174,12 +177,12 @@ public class PageableAction extends ActionSupport implements
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#getTotalPageCount()
 	 */
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see cc.ywxm.utils.Page#getTotalPageCount()
 	 */
 	public int getTotalPageCount()

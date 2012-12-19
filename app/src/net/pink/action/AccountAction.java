@@ -2,15 +2,13 @@ package net.pink.action;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.List;
 
+import net.pink.action.base.BaseAction;
+import net.pink.model.Account;
 import net.pink.service.AccountService;
-import net.pink.utils.BaseAction;
 
-import org.apache.struts2.json.JSONException;
-import org.apache.struts2.json.JSONUtil;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -45,24 +43,27 @@ public class AccountAction extends BaseAction {
 	 *
 	 * @return
 	 * @throws IOException
-	 * @throws JSONException
 	 */
-	public String add() throws IOException, JSONException {
-		String jsonString = "";
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-		Date d = null;
-		try {
-			d = sdf.parse(date);
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-		//System.out.println(item);
-		int code = accountService.add(d, item, category, money, note);
-		jsonString = JSONUtil.serialize(code);
+	public String add() throws IOException {
+		String result = "";
+		int code = accountService.add(date, item, category, money, note);
+		result = new JSONObject(code).toString();
 		response.setContentType("text/html;charset=utf-8");
 		response.setHeader("Cache-Control", "no-cache");
 		PrintWriter out = response.getWriter();
-		out.append(jsonString);
+		out.append(result);
+		out.close();
+		return NONE;
+	}
+
+	public String gets() throws IOException{
+		String result = "";
+		List<Account> list = accountService.gets();
+		result = new JSONObject(list).toString();
+		response.setContentType("text/html;charset=utf-8");
+		response.setHeader("Cache-Control", "no-cache");
+		PrintWriter out = response.getWriter();
+		out.append(result);
 		out.close();
 		return NONE;
 	}

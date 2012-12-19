@@ -26,7 +26,7 @@ import org.apache.poi.hssf.util.HSSFColor;
 
 /**
  * 利用开源组件POI3.0.2动态导出EXCEL文档 转载时请保留以下信息，注明出处！
- * 
+ *
  * @author leno
  * @version v1.0
  * @param <T>
@@ -56,7 +56,7 @@ public class ExportExcel<T>
 
 	/**
 	 * 这是一个通用的方法，利用了JAVA的反射机制，可以将放置在JAVA集合中并且符号一定条件的数据以EXCEL 的形式输出到指定IO设备上
-	 * 
+	 *
 	 * @param title
 	 *            表格标题名
 	 * @param headers
@@ -69,7 +69,7 @@ public class ExportExcel<T>
 	 * @param pattern
 	 *            如果有时间数据，设定输出格式。默认为"yyy-MM-dd"
 	 */
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "deprecation" })
 	public void exportExcel(String title, String[] headers,
 			Collection<T> dataset, OutputStream out, String pattern)
 	{
@@ -111,7 +111,7 @@ public class ExportExcel<T>
 		font2.setBoldweight(HSSFFont.BOLDWEIGHT_NORMAL);
 		// 把字体应用到当前的样式
 		style2.setFont(font2);
-		
+
 		HSSFFont font3 = workbook.createFont();
 		font3.setColor(HSSFColor.BLUE.index);
 
@@ -229,23 +229,18 @@ public class ExportExcel<T>
 					}
 				} catch (SecurityException e)
 				{
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (NoSuchMethodException e)
 				{
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IllegalArgumentException e)
 				{
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IllegalAccessException e)
 				{
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (InvocationTargetException e)
 				{
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} finally
 				{

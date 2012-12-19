@@ -13,19 +13,25 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import net.pink.action.base.Pageable;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.ResultSetExtractor;
 
 public class RSMapper
 {
+
+	private static Logger logger = LoggerFactory.getLogger(RSMapper.class);
 	protected RSMapper()
 	{
 	}
 
 	/**
 	 * 将查询结果集反射到对象中返回。
-	 * 
+	 *
 	 * @param <T>
 	 * @param jdbcTemplate
 	 * @param sql
@@ -38,12 +44,13 @@ public class RSMapper
 	public static <T> T query(JdbcTemplate jdbcTemplate, String sql,
 			Class<T> clazz, Object... args) throws DataAccessException
 	{
+		logger.debug(sql);
 		return (T) jdbcTemplate.query(sql, args, extractorForObject(clazz));
 	}
 
 	/**
 	 * 将查询结果集反射到对象列表中返回
-	 * 
+	 *
 	 * @param <E>
 	 * @param jdbcTemplate
 	 * @param sql
@@ -55,13 +62,13 @@ public class RSMapper
 	public static <E> List<E> queryList(JdbcTemplate jdbcTemplate, String sql,
 			Class<E> clazz, Object... args)
 	{
-		// System.out.println(sql);
+		logger.debug(sql);
 		return (List<E>) jdbcTemplate.query(sql, args, extractorForList(clazz));
 	}
 
 	/**
 	 * 将分页查询结果集反射到对象列表中返回。
-	 * 
+	 *
 	 * @param <E>
 	 * @param jdbcTemplate
 	 * @param sql
@@ -96,7 +103,7 @@ public class RSMapper
 
 	/**
 	 * 返回查询总记录的SQL
-	 * 
+	 *
 	 * @param sql
 	 * @return
 	 */
@@ -109,7 +116,7 @@ public class RSMapper
 
 	/**
 	 * 返回分页查询的SQL
-	 * 
+	 *
 	 * @param sql
 	 * @param page
 	 * @return
@@ -134,7 +141,7 @@ public class RSMapper
 
 	/**
 	 * 将结果集反射到对象中返回。
-	 * 
+	 *
 	 * @param <T>
 	 * @param rs
 	 * @param clazz
@@ -148,7 +155,7 @@ public class RSMapper
 
 	/**
 	 * 将结果集反射到对象列表中返回。
-	 * 
+	 *
 	 * @param <E>
 	 * @param rs
 	 * @param clazz
@@ -162,12 +169,11 @@ public class RSMapper
 
 	/**
 	 * ResultSetExtractor for object
-	 * 
+	 *
 	 * @param <T>
 	 * @param clazz
 	 * @return
 	 */
-	@SuppressWarnings("rawtypes")
 	private static <T> ResultSetExtractor extractorForObject(
 			final Class<T> clazz)
 	{
@@ -184,7 +190,7 @@ public class RSMapper
 
 	/**
 	 * ResultSet to Object
-	 * 
+	 *
 	 * @param <T>
 	 * @param rs
 	 * @param clazz
@@ -199,7 +205,7 @@ public class RSMapper
 
 	/**
 	 * ResultSet to Object
-	 * 
+	 *
 	 * @param <T>
 	 * @param rs
 	 * @param clazz
@@ -220,12 +226,11 @@ public class RSMapper
 
 	/**
 	 * ResultSetExtractor for list
-	 * 
+	 *
 	 * @param <E>
 	 * @param clazz
 	 * @return
 	 */
-	@SuppressWarnings("rawtypes")
 	private static <E> ResultSetExtractor extractorForList(final Class<E> clazz)
 	{
 		return new ResultSetExtractor()
@@ -240,7 +245,7 @@ public class RSMapper
 
 	/**
 	 * ResultSet to Object list
-	 * 
+	 *
 	 * @param <E>
 	 * @param rs
 	 * @param clazz
@@ -255,7 +260,7 @@ public class RSMapper
 
 	/**
 	 * ResultSet to Object list
-	 * 
+	 *
 	 * @param <E>
 	 * @param rs
 	 * @param clazz
@@ -278,7 +283,7 @@ public class RSMapper
 
 	/**
 	 * Class.newInstance()
-	 * 
+	 *
 	 * @param <T>
 	 * @param clazz
 	 * @return
@@ -297,7 +302,7 @@ public class RSMapper
 
 	/**
 	 * return query column's names equalsIgnoreCase field's names
-	 * 
+	 *
 	 * @param clazz
 	 * @param rs
 	 * @return
@@ -311,7 +316,7 @@ public class RSMapper
 
 	/**
 	 * return query column's names equalsIgnoreCase field's names
-	 * 
+	 *
 	 * @param clazz
 	 * @param queryColumnNames
 	 * @return
@@ -335,7 +340,7 @@ public class RSMapper
 
 	/**
 	 * return query column's names
-	 * 
+	 *
 	 * @param rs
 	 * @return
 	 * @throws SQLException
@@ -354,7 +359,7 @@ public class RSMapper
 
 	/**
 	 * return Class's setter
-	 * 
+	 *
 	 * @param clazz
 	 * @return
 	 */
@@ -365,7 +370,7 @@ public class RSMapper
 
 	/**
 	 * single ResultSet to one Object
-	 * 
+	 *
 	 * @param <T>
 	 * @param rs
 	 * @param t
@@ -386,7 +391,7 @@ public class RSMapper
 
 	/**
 	 * invoke
-	 * 
+	 *
 	 * @param object
 	 * @param setMethod
 	 * @param rs

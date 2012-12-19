@@ -1,4 +1,4 @@
-package net.pink.utils;
+package net.pink.action.base;
 
 import java.util.Map;
 

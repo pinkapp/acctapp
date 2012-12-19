@@ -1,11 +1,13 @@
 package net.pink.service;
 
-import java.util.Date;
+import java.util.List;
+
+import net.pink.model.Account;
 
 public interface AccountService {
 	/**
 	 * 添加账目
-	 * 
+	 *
 	 * @param date
 	 * @param item
 	 * @param category
@@ -13,6 +15,12 @@ public interface AccountService {
 	 * @param note
 	 * @return
 	 */
-	int add(Date date, String item, Short category, Double money, String note);
+	int add(String date, String item, Short category, Double money, String note);
+
+	/**
+	 *
+	 * @return
+	 */
+	List<Account> gets();
 
 }
