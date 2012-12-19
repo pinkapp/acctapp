@@ -44,7 +44,7 @@ public class RSMapper
 	public static <T> T query(JdbcTemplate jdbcTemplate, String sql,
 			Class<T> clazz, Object... args) throws DataAccessException
 	{
-		logger.debug(sql);
+		logger.info(sql);
 		return (T) jdbcTemplate.query(sql, args, extractorForObject(clazz));
 	}
 
@@ -62,7 +62,7 @@ public class RSMapper
 	public static <E> List<E> queryList(JdbcTemplate jdbcTemplate, String sql,
 			Class<E> clazz, Object... args)
 	{
-		logger.debug(sql);
+		logger.info(sql);
 		return (List<E>) jdbcTemplate.query(sql, args, extractorForList(clazz));
 	}
 

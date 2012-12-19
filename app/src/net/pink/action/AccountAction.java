@@ -8,11 +8,11 @@ import net.pink.action.base.BaseAction;
 import net.pink.model.Account;
 import net.pink.service.AccountService;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
-
 
 /**
  *
@@ -26,6 +26,7 @@ import org.springframework.stereotype.Controller;
 public class AccountAction extends BaseAction {
 
 	private Integer id;
+
 	private String date;
 
 	public void setDate(String date) {
@@ -33,9 +34,13 @@ public class AccountAction extends BaseAction {
 	}
 
 	private String item;
+
 	private Short category;
+
 	private Double money;
+
 	private String note;
+
 	@Autowired
 	private AccountService accountService;
 
@@ -47,7 +52,8 @@ public class AccountAction extends BaseAction {
 	public String add() throws IOException {
 		String result = "";
 		int code = accountService.add(date, item, category, money, note);
-		result = new JSONObject(code).toString();
+		result = code + "";
+		// result = new JSONObject(code).toString();
 		response.setContentType("text/html;charset=utf-8");
 		response.setHeader("Cache-Control", "no-cache");
 		PrintWriter out = response.getWriter();
@@ -57,10 +63,10 @@ public class AccountAction extends BaseAction {
 		return NONE;
 	}
 
-	public String gets() throws IOException{
+	public String gets() throws IOException {
 		String result = "";
 		List<Account> list = accountService.gets();
-		result = new JSONObject(list).toString();
+		result = new JSONArray(list).toString();
 		response.setContentType("text/html;charset=utf-8");
 		response.setHeader("Cache-Control", "no-cache");
 		PrintWriter out = response.getWriter();
